@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isFavorite = false;
+  showBoring = false;
+  imageUrl = 'https://i.imgur.com/C99E0zT.png';
 
   couseGoals = [
     { title: 'Master Angular Styling', isActiveGoal: true },
