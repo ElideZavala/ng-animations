@@ -24,3 +24,11 @@
   border: 1px solid red;
   border-radius: 8px;
 }
+
+//? ::ng-deep es un selector que permite seleccionar elementos que se encuentran dentro del componente
+//? en este caso, el componente quote contiene un h1, por lo que se le aplica el estilo.
+:host-context(.boring #very-boring)::ng-deep {
+  h1 {
+    color: green;
+  }
+}

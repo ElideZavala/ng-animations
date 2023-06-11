@@ -7,7 +7,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     h1 {
       margin-top: 20px;
       font-size: 30px;
-      color: #bcbcbc
+      // color: #bcbcbc
     }
   `],
   encapsulation: ViewEncapsulation.ShadowDom
