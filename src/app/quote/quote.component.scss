@@ -1,0 +1,26 @@
+// #quote {
+//   border: 1px solid black;
+//   padding: 20px;
+// }
+
+:host {
+  display: block;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+//? :host es un selector que permite seleccionar el elemento que contiene el componente
+//? en este caso, el elemento que contiene el componente quote es el elemento con el id quote
+:host(.favorite) {
+  background-color: lightblue;
+  border: 1px solid blue;
+  border-radius: 8px;
+}
+
+//? host-context() es un selector que permite seleccionar un elemento que se encuentra en el contexto del componente
+//? en este caso, el componente quote se encuentra en el contexto de la clase boring, por lo que se le aplica el estilo.
+:host-context(.boring #very-boring) {
+  background-color: lightcoral;
+  border: 1px solid red;
+  border-radius: 8px;
+}
