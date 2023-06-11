@@ -3,7 +3,10 @@
     <div class="col-xs-12">
       <h1>My Quotes</h1>
       <div class="interesting">
-        <app-quote class="favorite"></app-quote>
+        <app-quote
+          [ngClass]="{'favorite super-favorite': isFavorite}">
+        </app-quote>
+        <button (click)="isFavorite = !isFavorite">Toggle</button>
       </div>
       <div class="boring">
         <div id="very-boring">

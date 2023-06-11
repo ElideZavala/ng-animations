@@ -4,14 +4,20 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app-author',
   templateUrl: './author.component.html',
   styles: [`
-    h1 {
-      margin-top: 20px;
-      font-size: 30px;
-      // color: #bcbcbc
+
+    .conectado {
+      background-color: yellow;
     }
+
+    .libre {
+      border: 2px solid orange;
+    }
+
   `],
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class AuthorComponent {
+  conteccion: boolean = true;
+
 
 }

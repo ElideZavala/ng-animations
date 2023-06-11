@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = 'Angular Styling';
+  isFavorite = false;
 
   couseGoals = [
     { title: 'Master Angular Styling', isActiveGoal: true },
